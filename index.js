@@ -29,4 +29,4 @@ app.get('/',(req,res)=>{
 })
 
 const PORT=process.env.port || 5000 
-app.listen(PORT,()=>console.log(`server is ruunning on port ${PORT}`))
+app.listen(process.env.PORT || 5000, '0.0.0.0',()=>console.log(`server is ruunning on port ${PORT}`))
